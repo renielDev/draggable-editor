@@ -1,15 +1,18 @@
-import React, { Component} from "react";
-import {hot} from "react-hot-loader";
-import "./App.css";
+import React from 'react'
+import { hot } from 'react-hot-loader'
+import PageLayout from './components/PageLayout'
 
-class App extends Component{
-  render(){
-    return(
-      <div className="App">
-        <h1> Hello, World 1! </h1>
-      </div>
-    );
-  }
+const App = () => {
+  return (
+    <PageLayout
+      header={() => {
+        return <h1>Sample</h1>
+      }}
+      content={() => {
+        return <h2>Sample 2</h2>
+      }}
+    />
+  )
 }
 
-export default hot(module)(App);
+export default hot(module)(App)

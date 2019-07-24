@@ -1,14 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Welcome = props => {
+const BaseInput = props => {
   const { name } = props
-
-  return <h1>Hello, {name}</h1>
+  return <h1>Hello, There{name}</h1>
 }
 
-Welcome.propTypes = {
+BaseInput.propTypes = {
   name: PropTypes.string.isRequired,
 }
 
-export default Welcome
+export default BaseInput
