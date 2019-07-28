@@ -1,5 +1,6 @@
 module.exports = {
   env: {
+    jest: true,
     browser: true,
     es6: true,
   },
@@ -25,17 +26,8 @@ module.exports = {
     'prettier'
   ],
   rules: {
-    "react/jsx-filename-extension": [0],
-    'import/no-extraneous-dependencies': [
-      "error",
-      {
-        devDependencies: [
-          '.storybook/**',
-          'stories/**',
-          'webpack.config.js'
-        ]
-      }
-    ],
+    'react/jsx-filename-extension': 0,
+    'import/no-extraneous-dependencies': 0,
     'prettier/prettier': [
       "error", 
       {
