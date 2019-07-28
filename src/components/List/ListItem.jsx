@@ -8,3 +8,5 @@ const ListItem = ({ children, ...rest }) => {
 ListItem.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+export default ListItem

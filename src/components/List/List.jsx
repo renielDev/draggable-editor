@@ -1,14 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import ListItem from './ListItem'
 
-const List = ({ children, ...rest }) => {
-  return <ul {...rest}>{children}</ul>
-}
-
-List.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+const List = styled.ul`
+  background: red;
+  width: 400px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+`
 
 List.Item = ListItem
 
