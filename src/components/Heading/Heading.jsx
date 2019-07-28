@@ -4,7 +4,10 @@ import PropTypes from 'prop-types'
 
 const HeaderStyled = ({ tag, children, ...rest }) => {
   const Container = styled(tag)`
-    color: red;
+    color: #42413c;
+    text-align: center;
+    width: fit-content;
+    ${props => (props.fullWidth ? 'width: 100%' : '')};
   `
 
   return <Container {...rest}>{children}</Container>
@@ -13,11 +16,13 @@ const HeaderStyled = ({ tag, children, ...rest }) => {
 HeaderStyled.propTypes = {
   children: PropTypes.node,
   tag: PropTypes.string,
+  fullWidth: PropTypes.bool,
 }
 
 HeaderStyled.defaultProps = {
   children: '',
   tag: 'h1',
+  fullWidth: false,
 }
 
 const Header = props => {

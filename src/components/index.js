@@ -1,5 +1,5 @@
 import Input from './Input'
-import Header from './Header'
+import Heading from './Heading'
 import List from './List'
 
-export { Header, Input, List }
+export { Heading, Input, List }
