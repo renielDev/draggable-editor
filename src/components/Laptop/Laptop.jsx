@@ -17,7 +17,7 @@ const KeyboardStyled = styled.div`
   transform: perspective(600px) rotateX(45deg) scale(0.7);
 `
 
-const KeyHole = styled.div`
+const KeyFrame = styled.div`
   background-color: #fbfbfb;
   border-radius: 5px;
   margin: 5px;
@@ -70,20 +70,18 @@ const Key = ({ child, span }) => {
     childKey = (
       <React.Fragment>
         {child.map(label => (
-          <KeyHole span={3} className="key-hole">
+          <KeyFrame span={3} className="key-hole">
             <KeyStyled>{label}</KeyStyled>
-          </KeyHole>
+          </KeyFrame>
         ))}
       </React.Fragment>
     )
   }
 
-  console.log(subKey)
-
   return (
-    <KeyHole span={span} subKey={subKey}>
+    <KeyFrame span={span} subKey={subKey}>
       {childKey}
-    </KeyHole>
+    </KeyFrame>
   )
 }
 
