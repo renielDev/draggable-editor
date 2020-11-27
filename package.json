@@ -2,7 +2,7 @@
   "name": "draggable-editor",
   "version": "1.0.0",
   "description": "draggable-editor",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "storybook": "start-storybook",
     "start": "webpack-dev-server --mode development",
@@ -19,16 +19,10 @@
   },
   "homepage": "https://github.com/renielDev/draggable-editor#readme",
   "devDependencies": {
-    "@babel/cli": "^7.1.0",
-    "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
     "@storybook/react": "^5.1.9",
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^8.0.7",
-    "babel-eslint": "^10.0.2",
-    "babel-jest": "^24.8.0",
-    "babel-loader": "^8.0.2",
+    "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^1.0.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
@@ -46,10 +40,17 @@
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.1",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@types/styled-components": "^5.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-hot-loader": "^4.3.11",
-    "styled-components": "^4.3.2"
+    "source-map-loader": "^0.2.4",
+    "styled-components": "^5.1.0",
+    "typescript": "^3.8.3"
   }
 }

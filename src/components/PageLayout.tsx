@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
-import PropTypes from 'prop-types'
+import PropTypes, { string } from 'prop-types'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -52,7 +52,12 @@ const Content = styled.div`
   flex: 1;
 `
 
-const PageLayout = props => {
+interface PageLayoutProps {
+  header: string,
+  content: React.ReactElement
+}
+
+const PageLayout = (props: PageLayoutProps): React.ReactElement => {
   const { header, content } = props
   return (
     <React.Fragment>

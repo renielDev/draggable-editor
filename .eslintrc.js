@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    jest: true,
+    // jest: true,
     browser: true,
     es6: true,
   },
@@ -15,7 +15,7 @@ module.exports = {
   },
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      // jsx: true,
     },
     ecmaVersion: 2018,
     sourceType: 'module',
